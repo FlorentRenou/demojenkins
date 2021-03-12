@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Application {
 
   /**
-   * Ceci est le point d'entrée du programme.
+   * This is the entry point of the program.
    * 
-   * @param args Tableau avec des arguments
+   * @param args Table with arguments
    */
   public static void main(String[] args) {
     System.out.println("Hello World !");
@@ -65,7 +65,7 @@ public class Application {
 
       System.out.println("Number :");
       int ValueA = myObj.nextInt();
-      if (calc.eve(ValueA)) {
+      if (calc.pri(ValueA)) {
         System.out.println("Response : " + ValueA + " is a first number");
       } else {
         System.out.println("Response : " + ValueA + " is not a first number");

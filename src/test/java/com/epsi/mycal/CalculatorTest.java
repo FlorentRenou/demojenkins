@@ -62,21 +62,30 @@ public class CalculatorTest {
 
   @Test
   public void testEve() {
-    int valueA = 4;
+    int even = 4;
+    int notEven = 3;
 
     Calculator calc = new Calculator();
-    boolean actual = calc.eve(valueA);
 
+    boolean actual = calc.eve(even);
     assertEquals(true, actual);
+
+    actual = calc.eve(notEven);
+    assertEquals(false, actual);
+
   }
 
   @Test
-  public void testPre() {
-    int valueA = 1;
+  public void testPri() {
+    int Prime = 2;
+    int notPrime = 1;
 
     Calculator calc = new Calculator();
-    boolean actual = calc.pre(valueA);
 
+    boolean actual = calc.pri(Prime);
+    assertEquals(true, actual);
+
+    actual = calc.pri(notPrime);
     assertEquals(false, actual);
   }
 

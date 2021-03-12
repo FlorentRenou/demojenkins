@@ -20,56 +20,56 @@ public class Application {
     int line = myObj.nextInt();
     int firstNumber;
     int secondNumber;
-    switch (line) {
-    case 1:
-      System.out.println("First number :");
-      firstNumber = myObj.nextInt();
-      System.out.println("Second number :");
-      secondNumber = myObj.nextInt();
-      System.out.println("Response : " + calc.add(firstNumber, secondNumber));
-      break;
-    case 2:
-      System.out.println("First number :");
-      firstNumber = myObj.nextInt();
-      System.out.println("Second number :");
-      secondNumber = myObj.nextInt();
-      System.out.println("Response : " + calc.sub(firstNumber, secondNumber));
-      break;
-    case 3:
-      System.out.println("First number :");
-      firstNumber = myObj.nextInt();
-      System.out.println("Second number :");
-      secondNumber = myObj.nextInt();
-      System.out.println("Response : " + calc.mul(firstNumber, secondNumber));
-      break;
-    case 4:
-      System.out.println("First number :");
-      firstNumber = myObj.nextInt();
-      System.out.println("Second number :");
-      secondNumber = myObj.nextInt();
-      System.out.println("Response : " + calc.div(firstNumber, secondNumber));
-      break;
-    case 5:
-      System.out.println("Number :");
-      firstNumber = myObj.nextInt();
-      if (calc.eve(firstNumber)) {
-        System.out.println("Response : " + firstNumber + " is even");
-      } else {
-        System.out.println("Response : " + firstNumber + " is not even");
+      switch (line) {
+      case 1:
+        System.out.println("First number :");
+        firstNumber = myObj.nextInt();
+        System.out.println("Second number :");
+        secondNumber = myObj.nextInt();
+        System.out.println("Response : " + calc.add(firstNumber, secondNumber));
+        break;
+      case 2:
+        System.out.println("First number :");
+        firstNumber = myObj.nextInt();
+        System.out.println("Second number :");
+        secondNumber = myObj.nextInt();
+        System.out.println("Response : " + calc.sub(firstNumber, secondNumber));
+        break;
+      case 3:
+        System.out.println("First number :");
+        firstNumber = myObj.nextInt();
+        System.out.println("Second number :");
+        secondNumber = myObj.nextInt();
+        System.out.println("Response : " + calc.mul(firstNumber, secondNumber));
+        break;
+      case 4:
+        System.out.println("First number :");
+        firstNumber = myObj.nextInt();
+        System.out.println("Second number :");
+        secondNumber = myObj.nextInt();
+        System.out.println("Response : " + calc.div(firstNumber, secondNumber));
+        break;
+      case 5:
+        System.out.println("Number :");
+        firstNumber = myObj.nextInt();
+        if (calc.eve(firstNumber)) {
+          System.out.println("Response : " + firstNumber + " is even");
+        } else {
+          System.out.println("Response : " + firstNumber + " is not even");
+        }
+        break;
+      case 6:
+        System.out.println("Number :");
+        firstNumber = myObj.nextInt();
+        if (calc.pri(firstNumber)) {
+          System.out.println("Response : " + firstNumber + " is a first number");
+        } else {
+          System.out.println("Response : " + firstNumber + " is not a first number");
+        }
+        break;
+      default:
+        System.out.println("Incorrect value");
       }
-      break;
-    case 6:
-      System.out.println("Number :");
-      firstNumber = myObj.nextInt();
-      if (calc.pri(firstNumber)) {
-        System.out.println("Response : " + firstNumber + " is a first number");
-      } else {
-        System.out.println("Response : " + firstNumber + " is not a first number");
-      }
-      break;
-    default:
-      System.out.println("Incorrect value");
-    }
 
   }
 

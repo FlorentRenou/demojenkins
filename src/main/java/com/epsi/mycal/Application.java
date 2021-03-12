@@ -16,8 +16,7 @@ public class Application {
     Scanner myObj = new Scanner(System.in, Charset.defaultCharset());
     Calculator calc = new Calculator();
 
-    System.out.println("Choose your operator : 1-Addition 2-Subtraction 3-Multiplication 4-Division "
-        + "5-Even number 6-First number");
+    System.out.println("Choose your operator : 1-Addition 2-Subtraction 3-Multiplication 4-Division 5-Even number 6-First number");
     int line = myObj.nextInt();
     int firstNumber;
     int secondNumber;

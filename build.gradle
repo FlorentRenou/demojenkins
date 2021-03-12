@@ -43,10 +43,5 @@ spotbugs {
 }
 
 test {
-  useJUnitPlatform()
-  ignoreFailures = true
-  reports {
-  junitXml.enabled = true
-  html.enabled = false
-}
+    ignoreFailures = true
 }

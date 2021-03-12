@@ -1,5 +1,6 @@
 package com.epsi.mycal;
 
+import java.nio.charset.Charset;
 import java.util.Scanner;
 
 public class Application {
@@ -12,7 +13,7 @@ public class Application {
   public static void main(String[] args) {
     System.out.println("Hello World !");
 
-    Scanner myObj = new Scanner(System.in);
+    Scanner myObj = new Scanner(System.in, Charset.defaultCharset());
     Calculator calc = new Calculator();
 
     System.out.println(
@@ -22,53 +23,53 @@ public class Application {
     if (line == 1) {
 
       System.out.println("First number :");
-      int ValueA = myObj.nextInt();
+      int firstNumber = myObj.nextInt();
       System.out.println("Second number :");
-      int ValueB = myObj.nextInt();
-      System.out.println("Response : " + calc.add(ValueA, ValueB));
+      int secondNumber = myObj.nextInt();
+      System.out.println("Response : " + calc.add(firstNumber, secondNumber));
 
     } else if (line == 2) {
 
       System.out.println("First number :");
-      int ValueA = myObj.nextInt();
+      int firstNumber = myObj.nextInt();
       System.out.println("Second number :");
-      int ValueB = myObj.nextInt();
-      System.out.println("Response : " + calc.sub(ValueA, ValueB));
+      int secondNumber = myObj.nextInt();
+      System.out.println("Response : " + calc.sub(firstNumber, secondNumber));
 
     } else if (line == 3) {
 
       System.out.println("First number :");
-      int ValueA = myObj.nextInt();
+      int firstNumber = myObj.nextInt();
       System.out.println("Second number :");
-      int ValueB = myObj.nextInt();
-      System.out.println("Response : " + calc.mul(ValueA, ValueB));
+      int secondNumber = myObj.nextInt();
+      System.out.println("Response : " + calc.mul(firstNumber, secondNumber));
 
     } else if (line == 4) {
 
       System.out.println("First number :");
-      int ValueA = myObj.nextInt();
+      int firstNumber = myObj.nextInt();
       System.out.println("Second number :");
-      int ValueB = myObj.nextInt();
-      System.out.println("Response : " + calc.div(ValueA, ValueB));
+      int secondNumber = myObj.nextInt();
+      System.out.println("Response : " + calc.div(firstNumber, secondNumber));
 
     } else if (line == 5) {
 
       System.out.println("Number :");
-      int ValueA = myObj.nextInt();
-      if (calc.eve(ValueA)) {
-        System.out.println("Response : " + ValueA + " is even");
+      int firstNumber = myObj.nextInt();
+      if (calc.eve(firstNumber)) {
+        System.out.println("Response : " + firstNumber + " is even");
       } else {
-        System.out.println("Response : " + ValueA + " is not even");
+        System.out.println("Response : " + firstNumber + " is not even");
       }
 
     } else if (line == 6) {
 
       System.out.println("Number :");
-      int ValueA = myObj.nextInt();
-      if (calc.pri(ValueA)) {
-        System.out.println("Response : " + ValueA + " is a first number");
+      int firstNumber = myObj.nextInt();
+      if (calc.pri(firstNumber)) {
+        System.out.println("Response : " + firstNumber + " is a first number");
       } else {
-        System.out.println("Response : " + ValueA + " is not a first number");
+        System.out.println("Response : " + firstNumber + " is not a first number");
       }
 
     } else {

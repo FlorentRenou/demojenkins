@@ -27,6 +27,7 @@ def classesJava = "${project.buildDir}/classes/java/main/"
 checkstyle {
     toolVersion = "6.3"
 }
+
 task checkstyleMain (type: Checkstyle, overwrite: true) {
     ignoreFailures = true
     showViolations = false
@@ -39,4 +40,13 @@ task checkstyleMain (type: Checkstyle, overwrite: true) {
 
 spotbugs {
    ignoreFailures = true 
+}
+
+test {
+  useJUnitPlatform()
+  ignoreFailures = true
+  reports {
+  junitXml.enabled = true
+  html.enabled = false
+}
 }

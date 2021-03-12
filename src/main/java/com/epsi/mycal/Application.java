@@ -16,64 +16,59 @@ public class Application {
     Scanner myObj = new Scanner(System.in, Charset.defaultCharset());
     Calculator calc = new Calculator();
 
-    System.out.println(
-        "Choose your operator : 1-Addition 2-Subtraction 3-Multiplication 4-Division "
+    System.out.println("Choose your operator : 1-Addition 2-Subtraction 3-Multiplication 4-Division "
         + "5-Even number 6-First number");
     int line = myObj.nextInt();
-
-    if (line == 1) {
-
+    int firstNumber;
+    int secondNumber;
+    switch (line) {
+    case 1:
       System.out.println("First number :");
-      int firstNumber = myObj.nextInt();
+      firstNumber = myObj.nextInt();
       System.out.println("Second number :");
-      int secondNumber = myObj.nextInt();
+      secondNumber = myObj.nextInt();
       System.out.println("Response : " + calc.add(firstNumber, secondNumber));
-
-    } else if (line == 2) {
-
+      break;
+    case 2:
       System.out.println("First number :");
-      int firstNumber = myObj.nextInt();
+      firstNumber = myObj.nextInt();
       System.out.println("Second number :");
-      int secondNumber = myObj.nextInt();
+      secondNumber = myObj.nextInt();
       System.out.println("Response : " + calc.sub(firstNumber, secondNumber));
-
-    } else if (line == 3) {
-
+      break;
+    case 3:
       System.out.println("First number :");
-      int firstNumber = myObj.nextInt();
+      firstNumber = myObj.nextInt();
       System.out.println("Second number :");
-      int secondNumber = myObj.nextInt();
+      secondNumber = myObj.nextInt();
       System.out.println("Response : " + calc.mul(firstNumber, secondNumber));
-
-    } else if (line == 4) {
-
+      break;
+    case 4:
       System.out.println("First number :");
-      int firstNumber = myObj.nextInt();
+      firstNumber = myObj.nextInt();
       System.out.println("Second number :");
-      int secondNumber = myObj.nextInt();
+      secondNumber = myObj.nextInt();
       System.out.println("Response : " + calc.div(firstNumber, secondNumber));
-
-    } else if (line == 5) {
-
+      break;
+    case 5:
       System.out.println("Number :");
-      int firstNumber = myObj.nextInt();
+      firstNumber = myObj.nextInt();
       if (calc.eve(firstNumber)) {
         System.out.println("Response : " + firstNumber + " is even");
       } else {
         System.out.println("Response : " + firstNumber + " is not even");
       }
-
-    } else if (line == 6) {
-
+      break;
+    case 6:
       System.out.println("Number :");
-      int firstNumber = myObj.nextInt();
+      firstNumber = myObj.nextInt();
       if (calc.pri(firstNumber)) {
         System.out.println("Response : " + firstNumber + " is a first number");
       } else {
         System.out.println("Response : " + firstNumber + " is not a first number");
       }
-
-    } else {
+      break;
+    default:
       System.out.println("Incorrect value");
     }
 

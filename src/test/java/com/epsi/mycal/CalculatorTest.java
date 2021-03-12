@@ -49,4 +49,35 @@ public class CalculatorTest {
     assertEquals(8, actual);
   }
 
+  @Test
+  public void testDiv() {
+    int valueA = 4;
+    int valueB = 2;
+
+    Calculator calc = new Calculator();
+    int actual = calc.div(valueA, valueB);
+
+    assertEquals(2, actual);
+  }
+
+  @Test
+  public void testEve() {
+    int valueA = 4;
+
+    Calculator calc = new Calculator();
+    boolean actual = calc.eve(valueA);
+
+    assertEquals(true, actual);
+  }
+
+  @Test
+  public void testPre() {
+    int valueA = 1;
+
+    Calculator calc = new Calculator();
+    boolean actual = calc.pre(valueA);
+
+    assertEquals(false, actual);
+  }
+
 }
